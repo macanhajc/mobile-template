@@ -1,0 +1,50 @@
+{
+  "locale": "en",
+  "localeName": "English",
+  "serverErrors": {
+    "credentialsError": "Invalid credentials"
+  },
+  "form": {
+    "save": "Save",
+    "delete": "Delete",
+    "update": "Update",
+    "requiredError": "{name} is required",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "firstNamePlaceholder": "First name",
+    "lastNamePlaceholder": "Last name",
+    "phonePlaceholder": "Phone",
+    "descriptionPlaceholder": "Description",
+    "coursePlaceholder": "Course",
+    "institutionPlaceholder": "Institution",
+    "typePlaceholder": "Course type",
+    "typeOptions": {
+      "specialization": "Specialization",
+      "graduation": "Graduation",
+      "postGraduate": "Post-graduate"
+    },
+    "pricePlaceholder": "Price",
+    "pricingTypePlaceholder": "Plan type",
+    "pricingTypeOptions": {
+      "free": "Free",
+      "basic": "Basic",
+      "advanced": "Advanced",
+      "premium": "Premium"
+    }
+  },
+  "dashboard": {
+    "title": "Home"
+  },
+  "explore": {
+    "title": "Explore",
+  },
+  "settings": {
+    "title": "Settings"
+  },
+  "students": {
+    "title": "My students"
+  },
+  "sheet": {
+    "title": "My sheets"
+  }
+}

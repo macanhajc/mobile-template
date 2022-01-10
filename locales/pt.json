@@ -1,0 +1,54 @@
+{
+  "locale": "pt",
+  "localeName": "Portuguese",
+  "serverErrors": {
+    "credentialsError": "Usuário ou senha inválidos"
+  },
+  "form": {
+    "save": "Salvar",
+    "delete": "Deletar",
+    "update": "Alterar",
+    "requiredError": "{name} é obrigatório",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Senha",
+    "firstNamePlaceholder": "Nome",
+    "lastNamePlaceholder": "Sobrenome",
+    "phonePlaceholder": "Telefone",
+    "descriptionPlaceholder": "Descrição",
+    "coursePlaceholder": "Curso",
+    "institutionPlaceholder": "Instituição",
+    "courseTypePlaceholder": "Tipo de curso",
+    "typePlaceholder": "Type",
+    "typeOptions": {
+      "specialization": "Especialização",
+      "graduation": "Graduação",
+      "postGraduate": "Pós graduação"
+    },
+    "pricePlaceholder": "Preço",
+    "pricingTypePlaceholder": "Tipo de plano",
+    "pricingTypeOptions": {
+      "free": "Free",
+      "basic": "Básico",
+      "advanced": "Avançado",
+      "premium": "Premium"
+    }
+  },
+  "dashboard": {
+    "title": "Inicio"
+  },
+  "explore": {
+    "title": "Explorar",
+    "searchPlaceholder": "Pesquise por um personal",
+    "searchMap": "Procure por um personal usando o mapa",
+    "recommendations": "Recomendações"
+  },
+  "settings": {
+    "title": "Configurações"
+  },
+  "students": {
+    "title": "Meus alunos"
+  },
+  "sheet": {
+    "title": "Minhas fichas"
+  }
+}
