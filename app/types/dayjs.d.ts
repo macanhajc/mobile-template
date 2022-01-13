@@ -1,7 +1,5 @@
 import 'dayjs';
 
 declare module 'dayjs' {
-  interface Dayjs {
-    fromNow(): string;
-  }
+  interface Dayjs {}
 }

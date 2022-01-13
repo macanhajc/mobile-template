@@ -34,19 +34,11 @@ export const useAnimated = (configs?: ConfigProps, shouldAnimate?: boolean) => {
   }, [configs, animatedValue, shouldAnimate, animation]);
 
   const useInterpolate = (outputRange: number[] | string[], animated?: Animated.Value) => {
-    const inputRange = [...new Array(outputRange.length)].map((_, i) => {
-      return i % 10;
-    });
+    const inputRange = [...new Array(outputRange.length)].map((_, i) => i % 10);
     if (animated) {
-      return animated.interpolate({
-        inputRange,
-        outputRange,
-      });
+      return animated.interpolate({inputRange, outputRange});
     }
-    return animatedValue.interpolate({
-      inputRange,
-      outputRange,
-    });
+    return animatedValue.interpolate({inputRange, outputRange});
   };
 
   return [animatedValue, useInterpolate] as const;
@@ -75,10 +67,7 @@ export const useAnimateToValue = (props?: AnimateToValueProps) => {
 
   const useInterpolate = (outputRange: number[] | string[]) => {
     const inputRange = [...new Array(outputRange.length)].map((_, i) => i);
-    return animatedValue.interpolate({
-      inputRange,
-      outputRange,
-    });
+    return animatedValue.interpolate({inputRange, outputRange});
   };
 
   return [animatedValue, useInterpolate] as const;

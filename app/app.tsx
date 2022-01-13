@@ -1,9 +1,12 @@
 import React, {useRef} from 'react';
+import {StatusBar} from 'react-native';
+
 import {ThemeProvider} from 'styled-components';
-import {SafeAreaProvider, initialWindowMetrics} from 'react-native-safe-area-context';
-import {NavigationContainerRef} from '@react-navigation/native';
+import {LocaleProvider} from './components/providers/LocaleProvider';
 import {theme} from './styles/theme';
+
 import * as storage from './utils/storage';
+
 import {
   useBackButtonHandler,
   AppNavigator,
@@ -11,17 +14,13 @@ import {
   setAppNavigation,
   useNavigationPersistence,
 } from './navigators';
+import {NavigationContainerRef} from '@react-navigation/native';
+import {SafeAreaProvider, initialWindowMetrics} from 'react-native-safe-area-context';
 
 // This puts screens in a native ViewController or Activity. If you want fully native
 // stack navigation, use `createNativeStackNavigator` in place of `createStackNavigator`:
 // https://github.com/kmagiera/react-native-screens#using-native-stack-navigator
 import {enableScreens} from 'react-native-screens';
-import {StatusBar} from 'react-native';
-import {LocaleProvider} from './components/providers/LocaleProvider';
-import dayjs from 'dayjs';
-
-const relativeTime = require('dayjs/plugin/relativeTime');
-dayjs.extend(relativeTime);
 
 enableScreens();
 

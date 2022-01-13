@@ -17,17 +17,12 @@ export const dayjsLocaleMap = {
   pt: 'pt',
 };
 
-export const momentLocales = {
+export const dayjsLocales = {
   en: {code: 'en', locale: dayjsPt},
   pt: {code: 'pt', locale: dayjsEn},
 };
 
-export const authLanguages = {
-  en: 'en',
-  pt: 'pt',
-};
-
-export const defaultLocale = () => 'pt' as LocaleEnum;
+export const defaultLocale = () => 'en' as LocaleEnum;
 
 const locales: Translation = {
   en: flatten(en),
